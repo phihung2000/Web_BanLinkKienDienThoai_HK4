@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_linhKienDienThoai" Class="connectSQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-T51L3QI\SQLEXPRESS;Initial Catalog=QL_linhKienDienThoai;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QL_linhKienDienThoaiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CucSacDuPhong" Member="CucSacDuPhongs">
+    <Type Name="CucSacDuPhong">
+      <Column Name="MaCucSac" Type="System.String" DbType="NChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TenCucSac" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="HinhMinhHoa" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DangNhap" Member="DangNhaps">
+    <Type Name="DangNhap">
+      <Column Name="TaiKhoan" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="MatKhau" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Sp_DangNhap" Method="Sp_DangNhap">
+    <Parameter Name="TaiKhoan" Parameter="taiKhoan" Type="System.String" DbType="NChar(50)" />
+    <Parameter Name="MatKhau" Parameter="matKhau" Type="System.String" DbType="NChar(20)" />
+    <ElementType Name="Sp_DangNhapResult">
+      <Column Name="KetQua" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_dongia" Method="sp_dongia">
+    <ElementType Name="sp_dongiaResult">
+      <Column Name="HinhMinhHoa" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Hang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_TimKiemOpLung" Method="sp_TimKiemOpLung">
+    <Parameter Name="ten" Type="System.String" DbType="NVarChar(128)" />
+    <ElementType Name="sp_TimKiemOpLungResult">
+      <Column Name="MaOpLung" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HinhMinhHoa" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Hang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_TimKiemCuSac" Method="sp_TimKiemCuSac">
+    <Parameter Name="ten" Type="System.String" DbType="NVarChar(128)" />
+    <ElementType Name="sp_TimKiemCuSacResult">
+      <Column Name="MaCucSac" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenCucSac" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="HinhMinhHoa" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Hang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_TimKiem" Method="sp_TimKiem">
+    <Parameter Name="ten" Type="System.String" DbType="NVarChar(128)" />
+    <ElementType Name="sp_TimKiemResult">
+      <Column Name="MaTaiNghe" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Hang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HinhMinhHoa" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_HienThiChiTietSP" Method="sp_HienThiChiTietSP">
+    <Parameter Name="MaSP" Parameter="maSP" Type="System.String" DbType="NChar(10)" />
+    <ElementType Name="sp_HienThiChiTietSPResult">
+      <Column Name="MaTaiNghe" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Hang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HinhMinhHoa" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_HienThiChiTietCucSac" Method="sp_HienThiChiTietCucSac">
+    <Parameter Name="MaSP" Parameter="maSP" Type="System.String" DbType="NChar(10)" />
+    <ElementType Name="sp_HienThiChiTietCucSacResult">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HinhMinhHoa" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+</Database>

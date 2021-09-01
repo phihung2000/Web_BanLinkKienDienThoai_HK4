@@ -1,0 +1,31 @@
+.portfolio-caption a {
+  color: red;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  width: 300px;
+  height: 100px;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  width: 300px;
+  height: 100px;
+}
+
+.mony giatien {
+  color: red;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.muangay i {
+  margin-left: 5px;
+}
+
+.mony a:hover {
+  background-color: #fff600;
+}
+

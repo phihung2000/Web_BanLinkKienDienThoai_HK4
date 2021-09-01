@@ -1,0 +1,177 @@
+﻿    <%@ Master Language="C#" MasterPageFile="~/banner.master" AutoEventWireup="true" CodeFile="left_baner_footer.master.cs" Inherits="master_test" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+       
+        .phangiua{
+	            margin-top: 100px;
+	              width: 100%;
+                border: 1px solid gray;
+                background-color:white;
+              height:880px;
+            }
+            .bentrai {
+                float: left;
+                width: 280px;
+                margin: 0;
+                padding: 1em;
+                border-left: 1px solid gray;
+               max-height:880px;
+            }
+            .bentrai ul {
+                width:265px;
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            .bentrai ul a {
+                text-decoration: none;
+                color:black;
+            }
+             .bentrai ul li{
+                 margin-top:-8px;
+                 margin-left:-17px;
+                 padding:3px;
+                 height:40px;
+                 
+                 border: solid 1px red; 
+                 background-color:#def4f4;
+             }
+             .bentrai ul h1{
+                 margin-left:-20px;
+                 text-align:center;
+                 font-size:24px;
+                 color:black;
+                 border:solid 0.5px black;
+                 border-top-left-radius:20px;
+                 border-top-right-radius:20px;
+                 background-color:#fc4b4b;
+             }
+             .bentrai ul li:hover{
+                 background-color:#ffcc00;
+             }
+            .bentrai ul image{
+                margin-left:200px;
+            }
+            .image_quangcao{
+                
+                width:265px;
+               
+            }
+            .o_giua{
+                
+                margin-left: 280px;
+                border-left: 1px solid gray;
+                padding: 1em;
+                overflow: hidden;
+                max-height:2000px;
+            }
+            .bentrai ul h1{
+         animation: colorBackground 0.5s infinite;
+         -webkit-animation: colorBackground 5s infinite;
+         -moz-animation: colorBackground 5s infinite;
+         -o-animation: colorBackground 0.5s infinite
+         }
+         @keyframes colorBackground {
+         0% {
+         background-color: yellowgreen;
+         color: white;
+         }
+         50% {
+         background-color: red;
+         color: yellow;
+         }
+         }
+ 
+         .bentrai ul h1:hover {
+         background: yellow;
+         color: red;
+         }
+         .bentrai ul h1:active {
+         background: green;
+         }
+    </style>
+    </asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="phangiua">
+<nav class="bentrai">
+  <ul>
+      
+      <asp:Image ID="Image1"  runat="server" Height="240px" width="280px" style="margin-left:-20px;margin-top:-20px" ImageUrl="~/assets/img/baner_trangchu/slider_image_1.png"  CssClass="mr-0" />
+   <h1>Danh Mục Hãng</h1>
+    <li><a href="#">Sản Phẩm Hãng Sam Sung</a></li>
+    <li><a href="#">Sản Phẩm Hãng XiaoMi</a></li>
+    <li><a href="#">Sản Phẩm Hãng ViVo</a></li>
+    <li><a href="#">Sản Phẩm Hãng Nokia</a></li>
+    <li><a href="#">Sản Phẩm Hãng Opppo</a></li>
+    <li><a href="#">Sản Phẩm Hãng Iphone</a></li>
+  </ul>
+    <ul>
+        <h1>
+        <marquee direction="left" behavior="alternate" font-size="24px">
+      QUẢNG CÁO </marquee>
+            </h1>
+    </ul>
+    <div class="image_quangcao">
+        <%--<marquee direction="up" behavior="alternate">--%>
+        <asp:Image ID="Image2" runat="server" ImageUrl="~/assets/img/anh_quangcao/quangcao1.jpg" Height="130px" Width="120px" />
+         <asp:Image ID="Image3" runat="server" ImageUrl="~/assets/img/anh_quangcao/quangcao1.jpg" Height="130px" Width="120px" />
+        <%--</marquee>--%>
+         <marquee id="marq" scrollamount="3" direction="right" loop="500" scrolldelay="10" onmouseover="this.stop()" onmouseout="this.start()">
+
+    <a href="Link"><img src="~/assets/img/anh_quangcao/quangcao2.jpg" runat="server" title="Ghi chú cho ảnh" width="200" height="200"/> </a>
+
+
+    <a href="Link"><img src="~/assets/img/anh_quangcao/quangcao2.jpg" runat="server" title="Ghi chú cho ảnh" width="200" height="200"/> </a>
+
+
+    <%--<a href="Link"><img src="Link hình ảnh" title="Ghi chú cho ảnh" width="200" height="300"/> </a>--%></marquee>
+    </div>
+    
+   
+</nav>
+    
+<article class="o_giua">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+  </article>
+        
+</div>    
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#">Shop&nbsp;PH</span></a></h3>
+                <p class="links"><strong>Shop được xây dựng nhằm cung cấp cho người sử dùng những trải nghiệm dễ dàng, an toàn và nhanh chóng khi mua sắm trực tuyến thông qua hệ thống hỗ trợ thanh toán và vận hành vững mạnh.</strong><br><br></p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <h4>Thông Tin Liên Hệ</h4>
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">06 Trần Văn Ơn, Phú Hoà<br>TP Thủ Dầu một,Bình Dương<br></span></p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left">0396476443</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">nph.3082000@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>Tìm Hiểu Thêm</h4>
+                <div class="footer_span"><a class="footer_facebook" href="https://www.facebook.com/phihung.30082000/"></i><span>Facebook<br><br></span></a>
+                    <a
+                        class="footer_youtube" href="#"><i class="fab fa-youtube-square" style="color: #c10017;"></i><span>Youtube<br><br></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/agency.js"></script>
+    <script src="assets/js/Calendar-JavaScript-Can-only-see-in-browser-preview-mode.js"></script>
+    <script src="assets/js/Sidebar-Menu.js"></script>
+    <script src="../assets/js/jquery-1.8.3.min.js"></script>
+</asp:Content>
+
+

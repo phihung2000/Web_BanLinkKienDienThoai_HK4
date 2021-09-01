@@ -1,0 +1,111 @@
+.sale {
+  position: absolute;
+  position: relative;
+  display: inline-block;
+  background: red;
+  color: white;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 0px;
+  z-index: -1;
+  margin-left: 9px;
+}
+
+#services {
+  margin-top: -200px;
+}
+
+#border_sanpham_trangchu {
+  border-bottom: 5px solid transparent;
+  border-top: 40px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-radius: 50px;
+  padding: 50px;
+  border-image: url(../../assets/img/baner_trangchu/1.jpg) 30 round;
+  border-image-slice: 5%;
+  border-top-right-radius: 100px;
+}
+
+#search {
+  float: left;
+  margin-top: -40px;
+}
+
+.form-control {
+  width: 100px;
+  height: 42px;
+}
+
+#span_search {
+  height: 42px;
+}
+
+#btn_search {
+  margin-top: -1px;
+  width: 10px;
+  height: 43px;
+  margin-left: -20px;
+  background-color: #343a40!important;
+}
+
+@media screen and (max-width: 600px) .topnav .search-container float: none; {
+}
+
+#btn_search:active {
+  background-color: white;
+}
+
+#addon_search {
+  margin-left: -40px;
+}
+
+#nav_menu {
+  height: 50px;
+}
+
+.muangay_trangchu {
+  text-align: center;
+  width: 200px;
+  font-size: 18px;
+}
+
+.muangay_trangchu a {
+  color: #f89406;
+}
+
+.div_muangay_trangchu {
+  width: 100px;
+  border: solid 0.5px #f89406;
+  border-radius: 4px;
+  margin-left: 100px;
+}
+
+#container_sale {
+  margin-top: 30px;
+  border-bottom: 5px solid transparent;
+  border-top: 40px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-radius: 50px;
+  padding: 50px;
+  border-image: url(../../assets/img/baner_trangchu/2945561.jpg) 30 round;
+  border-image-slice: 4%;
+}
+
+.div_muangay_trangchu:hover {
+  background-color: #f89406;
+  color: white;
+}
+
+.div_muangay_trangchu a:hover {
+  color: white;
+}
+
+.muangay_trangchu a {
+  font-size: 12px;
+}
+

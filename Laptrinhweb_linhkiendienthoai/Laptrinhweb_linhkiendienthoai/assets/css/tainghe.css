@@ -1,0 +1,39 @@
+.tensanpham_tainghe {
+  height: 100px;
+}
+
+.tensanpham_tainghe a {
+  color: black;
+}
+.phangiua{
+	margin-top: 100px;
+	  width: 100%;
+    border: 1px solid gray;
+    background-color: red;
+}
+.tensanpham_tainghe a:hover {
+  color: #288ad6;
+}
+
+.bentrai {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+ 
+.bentrai ul {
+    list-style-type: none;
+    padding: 0;
+}
+    
+.bentrai ul a {
+    text-decoration: none;
+}
+
+.o_giua{
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}

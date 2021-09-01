@@ -1,0 +1,24 @@
+.btn-primary {
+  color: #fff;
+  background-color: #1E90FF;
+  border-color: #1E90FF;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  font-size: 18px;
+}
+
+#portfolio .portfolio-item {
+  border: solid 0.5px #f3f3f3;
+}
+
+.muangay {
+  text-align: center;
+  width: 200px;
+  font-size: 18px;
+}
+
+.shopping {
+  color: red;
+}
+

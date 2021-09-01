@@ -1,0 +1,67 @@
+.noi_dang_dung span {
+  color: blue;
+}
+
+.lienhecss {
+  margin-top: -200px;
+}
+
+.noi_dang_dung a {
+  color: blue;
+}
+
+.section-thongtinlienhe {
+  margin-top: -200px;
+  margin-left: 100px;
+}
+
+.section_noidangdung {
+  margin-top: -45px;
+  margin-left: 100px;
+}
+
+.thongtinlienhe h6 {
+  font-size: 18px;
+}
+
+.thongtinlienhe h3, h6 {
+  margin-left: 10px;
+}
+
+.form_control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 6px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#lienhecss {
+  margin-top: -300px;
+}
+
+#name {
+  width: 100%;
+  height: auto;
+}
+
+#email {
+  width: 100%;
+}
+
+#sdt {
+  width: 100%;
+}
+
+#message {
+  width: 100%;
+}
+

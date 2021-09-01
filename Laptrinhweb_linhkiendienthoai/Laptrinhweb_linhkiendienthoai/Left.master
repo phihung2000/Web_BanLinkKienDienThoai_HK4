@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" CodeFile="Left.master.vb" Inherits="Left" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 30%;
+            background-color: #a5a49d;
+        }
+        .auto-style2 {
+            height: 23px;
+            width: 213px;
+        }
+        .auto-style3 {
+            width: 213px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style3">&nbsp;<asp:Image ID="Image1" runat="server" Height="22px" ImageUrl="~/image_master/diskette.png" Width="18px" />
+                <asp:Label ID="Label1" runat="server" Text="    DANH MỤC SẢN PHẨM"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:HyperLink ID="HyperLink1" runat="server">Sam Sung</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:HyperLink ID="HyperLink2" runat="server">Oppo</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:HyperLink ID="HyperLink3" runat="server">XiaoMi</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:HyperLink ID="HyperLink4" runat="server">ViVo</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:HyperLink ID="HyperLink5" runat="server">Iphone</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:HyperLink ID="HyperLink6" runat="server">Master</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:HyperLink ID="HyperLink7" runat="server">Nokia</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:HyperLink ID="HyperLink8" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:HyperLink ID="HyperLink9" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2">
+                <asp:HyperLink ID="HyperLink10" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:HyperLink ID="HyperLink11" runat="server">HyperLink</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
